@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 627px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 62px;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (width > 627px) {
+    flex-direction: row;
+
+    button {
+      width: 250px;
+    }
+  }
+}
+
+#list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 0;
+}
