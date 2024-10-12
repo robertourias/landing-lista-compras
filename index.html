@@ -22,25 +22,33 @@
       <h1 class="title">Compras da semana</h1>
 
       <form action="#" id="search">
-        <input type="text" placeholder="Adicione um novo item" />
-        <button>Adicionar item</button>
+        <input type="text" placeholder="Adicione um novo item" id="input-search" />
+        <button type="submit">Adicionar item</button>
       </form>
 
       <div id="list">
-        <div class="item">
-          <input type="checkbox" name="" id="">
-          Pão de forma
-          <a href="#"><img src="./assets/icons/delete.svg" alt=""></a>
+        <div class="item" id="item-id-1728694068156">
+          <input type="checkbox" id="item-1728694068156">
+          <label for="item-1728694068156">Pão de forma</label>
+          <a href="#" onclick="deleteItem(1728694068156, 'Pão de forma')"><img src="./assets/icons/delete.svg" alt=""></a>
         </div>
-        <div class="item">
-          <input type="checkbox" name="" id="">
-          Pão de forma
-          <a href="#"><img src="./assets/icons/delete.svg" alt=""></a>
+      
+        <div class="item" id="item-id-1728694072964">
+          <input type="checkbox" id="item-1728694072964">
+          <label for="item-1728694072964">Café preto</label>
+          <a href="#" onclick="deleteItem(1728694072964, 'Café preto')"><img src="./assets/icons/delete.svg" alt=""></a>
         </div>
-        <div class="item">
-          <input type="checkbox" name="" id="">
-          Pão de forma
-          <a href="#"><img src="./assets/icons/delete.svg" alt=""></a>
+      
+        <div class="item" id="item-id-1728694076715">
+          <input type="checkbox" id="item-1728694076715">
+          <label for="item-1728694076715">Suco de laranja</label>
+          <a href="#" onclick="deleteItem(1728694076715, 'Suco de laranja')"><img src="./assets/icons/delete.svg" alt=""></a>
+        </div>
+      
+        <div class="item" id="item-id-1728694081835">
+          <input type="checkbox" id="item-1728694081835">
+          <label for="item-1728694081835">Bolacha</label>
+          <a href="#" onclick="deleteItem(1728694081835, 'Bolacha')"><img src="./assets/icons/delete.svg" alt=""></a>
         </div>
       </div>
 
@@ -48,10 +56,12 @@
         <div class="item red">
           <img src="./assets/icons/warning-circle-filled.svg" alt="" />
           O item foi removido da lista
-          <a href="#"><img src="./assets/icons/delete-small.svg" alt=""></a>
+          <a href="#" class="btn-delete"><img src="./assets/icons/delete-small.svg" alt=""></a>
         </div>
       </div>
     </main>
   </div>
+
+  <script src="./scripts.js"></script>
 </body>
 </html>

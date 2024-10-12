@@ -34,3 +34,12 @@ header {
   gap: 16px;
   padding: 40px 0;
 }
+
+#message {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
